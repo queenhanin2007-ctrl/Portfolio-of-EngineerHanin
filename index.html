@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حنين زيدان - البورتوفوليو الشخصي</title>
+    <!-- مكتبة FontAwesome لأيقونات التواصل الاجتماعي -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 3px solid #ffb6c1;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid #ffb6c1;
+            object-fit: cover;
+            background-color: #2a2a2a;
+        }
+
+        h1 {
+            color: #ffb6c1;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            color: #cccccc;
+            font-size: 1.1rem;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #ffb6c1;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #ffb6c1;
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #333;
+            background-color: #2a2a2a;
+        }
+
+        .project-info {
+            padding: 1.2rem;
+            text-align: center;
+        }
+
+        .project-title {
+            color: #ffb6c1;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-desc {
+            color: #aaaaaa;
+            font-size: 0.9rem;
+        }
+
+        /* قسم كيفية التواصل */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .contact-card {
+            background-color: #1e1e1e;
+            padding: 1.2rem;
+            border-radius: 10px;
+            border: 1px solid #333;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            transition: border-color 0.3s, transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-card:hover {
+            border-color: #ffb6c1;
+            transform: translateY(-3px);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: #ffb6c1;
+        }
+
+        .contact-name {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid #333;
+        }
+
+        .rights {
+            font-size: 1rem;
+            color: #cccccc;
+            margin-bottom: 0.5rem;
+        }
+
+        .designer {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #ffb6c1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile-container">
+            <img src="c:\Users\HP\Pictures\حنين زيدان.jpeg" alt="حنين زيدان" class="profile-img">
+            <h1>حنين زيدان</h1>
+            <p class="subtitle">مبرمجة مواقع ومصممة ومطورة ألعاب ويب وتصاميم صور</p>
+        </div>
+    </header>
+
+    <!-- قسم البرمجة وتطوير الويب -->
+    <section class="section-container">
+        <h2 class="section-title">جزء من أعمالي في البرمجة وتطوير الويب</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <a href="https://queenhanin2007-ctrl.github.io/MY-first-project/" target="_blank" class="project-link">
+                    <img src="c:\Users\HP\Pictures\الموقع رقم1.png" alt="لقينا لك الحل" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">لقينا لك الحل</h3>
+                        <p class="project-desc">منصة شاملة لتقديم الحلول والخدمات.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://hanin-ahmed.vercel.app/" target="_blank" class="project-link">
+                    <img src="c:\Users\HP\Pictures\الموقع رقم 2.png" alt="موقع صلح" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">موقع صلح (محمي)</h3>
+                        <p class="project-desc">مشروع صلح خاص يتطلب كلمة سر للدخول.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://mummy-lime.vercel.app/" target="_blank" class="project-link">
+                    <img src="c:\Users\HP\Pictures\الموقع رقم3.png" alt="محبوبتي" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">محبوبتي</h3>
+                        <p class="project-desc">تطبيق ويب وتصميم مميز لمحبوبتي.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://haninzidan116-lang.github.io/100-55-/" target="_blank" class="project-link">
+                    <img src="c:\Users\HP\Pictures\الموقع رقم 4.png" alt="وحشتيني" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">وحشتيني بطريقة كريتيف</h3>
+                        <p class="project-desc">فكرة إبداعية وتفاعلية لعرض الرسائل.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://al-mio-amato-e-caro-marito.vercel.app/" target="_blank" class="project-link">
+                    <img src="c:\Users\HP\Pictures\الموقع رقم 5.png" alt="موقع صلح" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">موقع صلح</h3>
+                        <p class="project-desc">النسخة المفتوحة للجميع من موقع صلح.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://haninzidan116-lang.github.io/private-message/" target="_blank" class="project-link">
+                    <img src="c:\Users\HP\Pictures\الموقع رقم6.png" alt="موقع حب إيطالي" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">موقع حب (بالإيطالية)</h3>
+                        <p class="project-desc">يتضمن اللغة الإيطالية لأنها لغة الحب ولأنها لغة يحبها الطرف الآخر.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://queenhanin2007-ctrl.github.io/Happy1birthday/" target="_blank" class="project-link">
+                    <img src="c:\Users\HP\Pictures\الموقع رقم 7.png" alt="عيد ميلاد" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">موقع عيد ميلاد</h3>
+                        <p class="project-desc">تصميم احترافي لمناسبة عيد ميلاد.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://haninzidan116-lang.github.io/-1/" target="_blank" class="project-link">
+                    <img src="c:\Users\HP\Pictures\الموقع رقم8.png" alt="دعوة زفاف" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">دعوة زفاف</h3>
+                        <p class="project-desc">بطاقة ودعوة زفاف تفاعلية أنيقة.</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- قسم أعمال الجرافيك -->
+    <section class="section-container">
+        <h2 class="section-title">جزء من أعمالي في التصميم</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <a href="دعوه زفاف شبه ديزني 2.jpeg" target="_blank" class="project-link">
+                    <img src="c:\Users\HP\Pictures\دعوه زفاف شبه ديزني 2.jpeg" alt="تصميم جرافيك" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">دعوة زفاف</h3>
+                        <p class="project-desc">دعوة زفاف شبه ملكية مصممة خصيصاً لك/ي.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="دعوه خطوبه ديزني " target="_blank" class="project-link">
+                    <img src="c:\Users\HP\Pictures\دعوه خطوبه ديزني 6.jpeg" alt="تصميم جرافيك" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">دعوة خطوبة</h3>
+                        <p class="project-desc">دعوة خطوبة فريدة من نوعها لك/ي أنتي فقط.</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- قسم كيفية التواصل معنا -->
+    <section class="section-container">
+        <h2 class="section-title">كيفية التواصل معنا</h2>
+        <div class="contact-grid">
+
+            <a href="https://www.facebook.com/share/1CzDzfnMfC/" target="_blank" class="contact-card">
+                <i class="fab fa-facebook-f contact-icon"></i>
+                <span class="contact-name">Facebook</span>
+            </a>
+
+            <a href="https://x.com/haninzidan1" target="_blank" class="contact-card">
+                <i class="fab fa-x-twitter contact-icon"></i>
+                <span class="contact-name">X (Twitter)</span>
+            </a>
+
+            <a href="mailto:haninzidan116@gmail.com" class="contact-card">
+                <i class="fas fa-envelope contact-icon"></i>
+                <span class="contact-name">Gmail</span>
+            </a>
+
+            <a href="https://t.me/H3NW4Y" target="_blank" class="contact-card">
+                <i class="fab fa-telegram-plane contact-icon"></i>
+                <span class="contact-name">Telegram</span>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        <p class="rights">جميع الحقوق محفوظة ©2026 - منصة بورتفوليو</p>
+        <p class="designer">⭐ Design by Hanin ⭐</p>
+    </footer>
+
+</body>
+</html>
